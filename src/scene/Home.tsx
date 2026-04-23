@@ -6,7 +6,7 @@ import {
   SpriteRender,
 } from '@safe-engine/webgl'
 
-import { sf_base, sf_button_start, sf_button_map, sf_button_exit, sf_button_game, sf_button_hoicham, sf_button_setting, sf_button_cup, sf_button_cart } from '../assets'
+import { sf_home, sf_button_start, sf_button_map, sf_button_exit, sf_button_game, sf_button_hoicham, sf_button_setting, sf_button_cup, sf_button_cart } from '../assets'
 import { Scenes } from '../helper/constant'
 import { FighterScene } from './FighterScene'
 import { SpineScene } from './SpineScene'
@@ -46,7 +46,7 @@ export class Home extends SceneComponent {
     <SceneComponent>
       <SpriteRender
         node={{ xy: [540, 1170], scale: 1.25 }}
-        spriteFrame={sf_base}
+        spriteFrame={sf_home}
       />
 
       <ButtonComp
@@ -113,7 +113,7 @@ export class Home extends SceneComponent {
       </ButtonComp>
 
       <ButtonComp
-        node={{ xy: [540, 620], scale: 0.8 }}
+        node={{ xy: [540, 640], scale: 0.8 }}
         spriteFrame={sf_button_exit}
         zoomScale={0.92}
         onPress={this.onPress}
