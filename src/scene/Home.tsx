@@ -52,7 +52,7 @@ export class Home extends SceneComponent {
       <ButtonComp
         node={{ xy: [970, 2220], scale: 0.35 }}
         spriteFrame={sf_button_setting}
-        zoomScale={0.92}
+        zoomScale={0.42}
         onPress={this.onPress}
       >
         <ExtraDataComp key="id" value={Scenes.Fighter} />
@@ -61,7 +61,7 @@ export class Home extends SceneComponent {
       <ButtonComp
         node={{ xy: [970, 2080], scale: 0.35 }}
         spriteFrame={sf_button_game}
-        zoomScale={0.92}
+        zoomScale={0.42}
         onPress={this.onPress}
       >
         <ExtraDataComp key="id" value={Scenes.Fighter} />
@@ -70,7 +70,7 @@ export class Home extends SceneComponent {
       <ButtonComp
         node={{ xy: [970, 1940], scale: 0.35 }}
         spriteFrame={sf_button_cup}
-        zoomScale={0.92}
+        zoomScale={0.42}
         onPress={this.onPress}
       >
         <ExtraDataComp key="id" value={Scenes.Fighter} />
@@ -79,7 +79,7 @@ export class Home extends SceneComponent {
       <ButtonComp
         node={{ xy: [970, 1800], scale: 0.35 }}
         spriteFrame={sf_button_cart}
-        zoomScale={0.92}
+        zoomScale={0.42}
         onPress={this.onPress}
       >
         <ExtraDataComp key="id" value={Scenes.Fighter} />
@@ -88,7 +88,7 @@ export class Home extends SceneComponent {
       <ButtonComp
         node={{ xy: [970, 1660], scale: 0.35 }}
         spriteFrame={sf_button_hoicham}
-        zoomScale={0.92}
+        zoomScale={0.42}
         onPress={this.onPress}
       >
         <ExtraDataComp key="id" value={Scenes.Fighter} />
