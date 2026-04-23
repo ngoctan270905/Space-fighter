@@ -1,0 +1,3 @@
+[submodule "packages/safe-engine-webgl"]
+	path = packages/safe-engine-webgl
+	url = git@github.com:Safe-engine/safe-engine-webgl.git
