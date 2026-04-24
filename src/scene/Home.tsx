@@ -11,6 +11,7 @@ import { Scenes } from '../helper/constant'
 import { FighterScene } from './FighterScene'
 import { SpineScene } from './SpineScene'
 import ButtonScene from './ButtonScene'
+import { GameScene } from './GameScene'
 
 const wait = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
 
@@ -25,7 +26,7 @@ export class Home extends SceneComponent {
     console.log('Clicked', id, Scenes[id])
 
     if (id === Scenes.Fighter) {
-      loadScene(FighterScene)
+      loadScene(GameScene)
       return
     }
 

@@ -1,17 +1,19 @@
 import { ComponentX } from '@safe-engine/webgl'
 
 export default class ParallaxScroller extends ComponentX {
-  resetY = 20.0
-  speed = 20.0
-
-  // onLoad () {}
+  speed = -200
+  height = 2340
+  count = 3
 
   update(dt: Float) {
     let y = this.node.position.y
     y += this.speed * dt
-    if (y <= this.resetY * this.node.scaleY) {
-      y -= this.resetY * this.node.scaleY
+
+    // khi tâm background đi quá dưới màn hình
+    if (y <= -1170) {
+      y += this.height * this.count
     }
-    this.node.posY =(y)
+
+    this.node.posY = y
   }
 }
